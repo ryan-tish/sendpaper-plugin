@@ -12,7 +12,7 @@ Mail real postcards and letters from your agent. The agent drafts the mail and g
 
 **Codex plugin**
 ```
-codex plugin marketplace add ryan-fern/sendpaper-plugin
+codex plugin marketplace add ryan-tish/sendpaper-plugin
 ```
 **Codex (MCP only):** `codex mcp add sendpaper --url https://sendpaper.onrender.com/mcp`
 
