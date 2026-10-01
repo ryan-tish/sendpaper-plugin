@@ -1,0 +1,30 @@
+{
+  "name": "sendpaper",
+  "version": "1.0.0",
+  "description": "Print and mail real postcards and letters to US addresses via USPS First-Class. The agent drafts the mail and returns a print preview and a checkout link; nothing is mailed until you pay.",
+  "author": { "name": "Sendpaper", "url": "https://sendpaper.onrender.com" },
+  "homepage": "https://sendpaper.onrender.com",
+  "repository": "https://github.com/ryan-fern/sendpaper-plugin",
+  "license": "MIT",
+  "keywords": ["mail", "postcard", "letter", "print", "usps", "direct mail"],
+  "mcpServers": "./.mcp.json",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Sendpaper",
+    "shortDescription": "Mail real postcards and letters",
+    "longDescription": "Send printed postcards (4x6, 6x9) and letters to any US address from Codex. Sendpaper returns an exact print preview and a Stripe checkout link; a person reviews every piece before it is printed and mailed via USPS First-Class.",
+    "developerName": "Sendpaper",
+    "category": "Productivity",
+    "capabilities": [],
+    "brandColor": "#2A4FA8",
+    "brandColorDark": "#7B9CF0",
+    "logo": "./assets/logo.svg",
+    "composerIcon": "./assets/logo.svg",
+    "defaultPrompt": ["Mail a thank-you postcard to someone who helped with this project"],
+    "websiteURL": "https://sendpaper.onrender.com",
+    "privacyPolicyURL": "https://sendpaper.onrender.com/privacy",
+    "termsOfServiceURL": "https://sendpaper.onrender.com/terms",
+    "supportURL": "https://sendpaper.onrender.com/agents",
+    "screenshots": []
+  }
+}

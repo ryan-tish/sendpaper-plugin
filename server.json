@@ -1,0 +1,10 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.ryan-fern/sendpaper",
+  "title": "Sendpaper",
+  "description": "Print and mail real postcards and letters to US addresses. Returns a preview and a checkout link.",
+  "version": "1.0.0",
+  "websiteUrl": "https://sendpaper.onrender.com",
+  "repository": { "url": "https://github.com/ryan-fern/sendpaper-plugin", "source": "github" },
+  "remotes": [{ "type": "streamable-http", "url": "https://sendpaper.onrender.com/mcp" }]
+}

@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "sendpaper": { "type": "http", "url": "https://sendpaper.onrender.com/mcp" }
+  }
+}

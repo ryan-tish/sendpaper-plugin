@@ -1,0 +1,30 @@
+# Sendpaper for Codex, Muse Code and Claude
+
+Mail real postcards and letters from your agent. The agent drafts the mail and gets back a print preview and a Stripe checkout link. Nothing is mailed until you pay, and a person reviews every piece before it's printed and sent via USPS First-Class (US addresses only).
+
+| Product | Price |
+|---|---|
+| Postcard 4×6 | $2.99 |
+| Postcard 6×9 | $3.99 |
+| Letter (up to 3 pages) | $4.99 |
+
+## Install
+
+**Codex plugin**
+```
+codex plugin marketplace add ryan-fern/sendpaper-plugin
+```
+**Codex (MCP only):** `codex mcp add sendpaper --url https://sendpaper.onrender.com/mcp`
+
+**Muse Code** — add to settings:
+```json
+"mcp_servers": { "sendpaper": { "transport": "streamable_http", "url": "https://sendpaper.onrender.com/mcp" } }
+```
+**Claude Code:** `claude mcp add --transport http sendpaper https://sendpaper.onrender.com/mcp`
+
+## Tools
+`get_pricing`, `create_postcard`, `create_letter`, `get_order`, `cancel_order`.
+
+Website: https://sendpaper.onrender.com · API docs: https://sendpaper.onrender.com/docs · [Content policy](https://sendpaper.onrender.com/content-policy)
+
+License: MIT
