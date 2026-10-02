@@ -2,8 +2,8 @@
   "name": "sendpaper",
   "version": "1.0.0",
   "description": "Print and mail real postcards and letters to US addresses via USPS First-Class. The agent drafts the mail and returns a print preview and a checkout link; nothing is mailed until you pay.",
-  "author": { "name": "Sendpaper", "url": "https://sendpaper.onrender.com" },
-  "homepage": "https://sendpaper.onrender.com",
+  "author": { "name": "Sendpaper", "url": "https://sendmypaper.com" },
+  "homepage": "https://sendmypaper.com",
   "repository": "https://github.com/ryan-tish/sendpaper-plugin",
   "license": "MIT",
   "keywords": ["mail", "postcard", "letter", "print", "usps", "direct mail"],
@@ -21,10 +21,10 @@
     "logo": "./assets/logo.svg",
     "composerIcon": "./assets/logo.svg",
     "defaultPrompt": ["Mail a thank-you postcard to someone who helped with this project"],
-    "websiteURL": "https://sendpaper.onrender.com",
-    "privacyPolicyURL": "https://sendpaper.onrender.com/privacy",
-    "termsOfServiceURL": "https://sendpaper.onrender.com/terms",
-    "supportURL": "https://sendpaper.onrender.com/agents",
+    "websiteURL": "https://sendmypaper.com",
+    "privacyPolicyURL": "https://sendmypaper.com/privacy",
+    "termsOfServiceURL": "https://sendmypaper.com/terms",
+    "supportURL": "https://sendmypaper.com/agents",
     "screenshots": []
   }
 }

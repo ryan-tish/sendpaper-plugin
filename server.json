@@ -4,7 +4,7 @@
   "title": "Sendpaper",
   "description": "Print and mail real postcards and letters to US addresses. Returns a preview and a checkout link.",
   "version": "1.0.0",
-  "websiteUrl": "https://sendpaper.onrender.com",
+  "websiteUrl": "https://sendmypaper.com",
   "repository": { "url": "https://github.com/ryan-tish/sendpaper-plugin", "source": "github" },
-  "remotes": [{ "type": "streamable-http", "url": "https://sendpaper.onrender.com/mcp" }]
+  "remotes": [{ "type": "streamable-http", "url": "https://sendmypaper.com/mcp" }]
 }

@@ -14,17 +14,17 @@ Mail real postcards and letters from your agent. The agent drafts the mail and g
 ```
 codex plugin marketplace add ryan-tish/sendpaper-plugin
 ```
-**Codex (MCP only):** `codex mcp add sendpaper --url https://sendpaper.onrender.com/mcp`
+**Codex (MCP only):** `codex mcp add sendpaper --url https://sendmypaper.com/mcp`
 
 **Muse Code** — add to settings:
 ```json
-"mcp_servers": { "sendpaper": { "transport": "streamable_http", "url": "https://sendpaper.onrender.com/mcp" } }
+"mcp_servers": { "sendpaper": { "transport": "streamable_http", "url": "https://sendmypaper.com/mcp" } }
 ```
-**Claude Code:** `claude mcp add --transport http sendpaper https://sendpaper.onrender.com/mcp`
+**Claude Code:** `claude mcp add --transport http sendpaper https://sendmypaper.com/mcp`
 
 ## Tools
 `get_pricing`, `create_postcard`, `create_letter`, `get_order`, `cancel_order`.
 
-Website: https://sendpaper.onrender.com · API docs: https://sendpaper.onrender.com/docs · [Content policy](https://sendpaper.onrender.com/content-policy)
+Website: https://sendmypaper.com · API docs: https://sendmypaper.com/docs · [Content policy](https://sendmypaper.com/content-policy)
 
 License: MIT
