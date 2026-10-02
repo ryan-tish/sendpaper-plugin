@@ -1,6 +1,6 @@
 # Sendpaper for Codex, Muse Code and Claude
 
-Mail real postcards and letters from your agent. The agent drafts the mail and gets back a print preview and a Stripe checkout link. Nothing is mailed until you pay, and a person reviews every piece before it's printed and sent via USPS First-Class (US addresses only).
+Mail real postcards and letters from your agent. The agent drafts the mail and gets back a print preview and a Stripe checkout link. Nothing is mailed until it's paid, by you or by your agent with your approval, and a person reviews every piece before it's printed and sent via USPS First-Class (US addresses only).
 
 | Product | Price |
 |---|---|
@@ -23,7 +23,9 @@ codex plugin marketplace add ryan-tish/sendpaper-plugin
 **Claude Code:** `claude mcp add --transport http sendpaper https://sendmypaper.com/mcp`
 
 ## Tools
-`get_pricing`, `create_postcard`, `create_letter`, `get_order`, `cancel_order`.
+`get_pricing`, `create_postcard`, `create_letter`, `pay_order`, `get_order`, `cancel_order`.
+
+Agents can pay with a Stripe shared payment token you approve (via Stripe Link). See https://docs.sendmypaper.com/guides/agent-payments.
 
 Website: https://sendmypaper.com · API docs: https://sendmypaper.com/docs · [Content policy](https://sendmypaper.com/content-policy)
 
