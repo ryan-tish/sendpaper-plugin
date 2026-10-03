@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
   "name": "io.github.ryan-tish/sendpaper",
   "title": "Sendpaper",
-  "description": "Print and mail real postcards and letters to US addresses. Returns a preview and a checkout link.",
+  "description": "Your agent sends real postcards and letters. You approve; we print and mail.",
   "version": "1.0.0",
   "websiteUrl": "https://sendmypaper.com",
   "repository": { "url": "https://github.com/ryan-tish/sendpaper-plugin", "source": "github" },
