@@ -27,6 +27,6 @@ codex plugin marketplace add ryan-tish/sendpaper-plugin
 
 Agents can pay with a Stripe shared payment token you approve (via Stripe Link). See https://docs.sendmypaper.com/guides/agent-payments.
 
-Website: https://sendmypaper.com · API docs: https://sendmypaper.com/docs · [Content policy](https://sendmypaper.com/content-policy)
+Website: https://sendmypaper.com · Docs: https://docs.sendmypaper.com · Support: support@sendmypaper.com · [Content policy](https://sendmypaper.com/content-policy)
 
 License: MIT
