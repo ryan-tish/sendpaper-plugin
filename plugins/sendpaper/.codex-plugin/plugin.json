@@ -1,7 +1,7 @@
 {
   "name": "sendpaper",
   "version": "1.0.0",
-  "description": "Print and mail real postcards and letters to US addresses via USPS First-Class. The agent drafts the mail and returns a print preview and a checkout link; nothing is mailed until you pay.",
+  "description": "Print and mail real postcards and letters to US addresses via USPS First-Class. The agent drafts the mail and shows an exact print preview; it pays only with your approval (Stripe Link) or gives you a checkout link.",
   "author": {
     "name": "Sendpaper",
     "url": "https://sendmypaper.com"
@@ -25,7 +25,10 @@
     "longDescription": "Send printed postcards (4x6, 6x9) and letters to any US address from Codex. Sendpaper returns an exact print preview and a Stripe checkout link; a person reviews every piece before it is printed and mailed via USPS First-Class.",
     "developerName": "Sendpaper",
     "category": "Productivity",
-    "capabilities": [],
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
     "brandColor": "#0F7A52",
     "brandColorDark": "#4FD1A1",
     "logo": "./assets/logo.svg",
@@ -36,7 +39,6 @@
     "websiteURL": "https://sendmypaper.com",
     "privacyPolicyURL": "https://sendmypaper.com/privacy",
     "termsOfServiceURL": "https://sendmypaper.com/terms",
-    "supportURL": "https://docs.sendmypaper.com/guides/faq",
-    "screenshots": []
+    "supportURL": "https://docs.sendmypaper.com/guides/faq"
   }
 }
