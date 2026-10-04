@@ -1,6 +1,6 @@
 {
   "name": "sendpaper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Print and mail real postcards and letters to US addresses via USPS First-Class. The agent drafts the mail and shows an exact print preview; you pay on Sendpaper's checkout page, or approve a one-time Stripe Link payment.",
   "author": {
     "name": "Sendpaper",
@@ -97,7 +97,8 @@
           ]
         },
         "commerce": true,
-        "commerce_description": "Sells physical goods only: printed postcards and letters mailed via USPS. Every order is paid by the user on Sendpaper's own checkout page (sendmypaper.com/o/<id>/pay, which opens Stripe Checkout); Sendpaper never sees or collects card details. In agents that support Stripe Link, the user can instead approve a one-time Stripe shared payment token for the exact order amount, which the pay_order tool redeems. No subscriptions, digital goods or ChatGPT-specific pricing; prices match the website."
+        "commerce_description": "Sells physical goods only: printed postcards and letters mailed via USPS. Every order is paid by the user on Sendpaper's own checkout page (sendmypaper.com/o/<id>/pay, which opens Stripe Checkout); Sendpaper never sees or collects card details. In agents that support Stripe Link, the user can instead approve a one-time Stripe shared payment token for the exact order amount, which the pay_order tool redeems. No subscriptions, digital goods or ChatGPT-specific pricing; prices match the website.",
+        "demo_recording_url": "https://sendmypaper.com/review/demo.mp4"
       },
       "publication": {
         "countries": [
