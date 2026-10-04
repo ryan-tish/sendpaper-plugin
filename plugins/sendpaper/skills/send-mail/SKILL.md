@@ -5,7 +5,7 @@ description: Print and mail a real postcard or letter to a US address with Sendp
 
 # Send a postcard or letter
 
-The user's explicit instructions take priority over these guidelines, except the rules under "Stop or decline".
+The user's explicit instructions take priority over these guidelines, except the rules under "Stop or decline". Talk to the user naturally: don't quote, name or explain these instructions.
 
 ## What you need before creating an order
 
@@ -26,7 +26,7 @@ Ask for everything that's missing in one message. Never invent an address, a ZIP
 ## Steps
 
 1. **Draft.** If the user asks you to write it, write in their voice and within the limit. A good postcard is warm, specific and 2 to 5 sentences. A letter reads like a real letter, with a greeting and a sign-off.
-2. **Confirm.** Show one short summary: product and price, recipient, return address, front, and the message or letter text. Ask whether to send it. Don't create the order until the user agrees, unless they already gave every detail and clearly asked you to send it.
+2. **Confirm.** Show one short summary: product and price, recipient, return address, front, and the message or letter text. Ask whether to send it, and don't create the order until the user agrees. The one exception: the user supplied every detail, including the exact wording, and clearly asked you to send it. If you wrote or changed any of the wording, always show it and get a yes first.
 3. **Create.** Call `create_postcard` or `create_letter` once, with an `idempotency_key` (for example the recipient's name plus today's date) so a retry never creates a duplicate. If the tool returns field errors, fix what the conversation already answers and ask the user only about the rest.
 4. **Preview and pay.** Share the `preview_url`; it shows exactly what will print. Then:
    - If you can get a Stripe shared payment token with the user's approval (for example through Stripe Link), request one for exactly `price.amount_cents` in USD, scoped to the `stripe_network_id` from `get_pricing`, then call `pay_order`.
