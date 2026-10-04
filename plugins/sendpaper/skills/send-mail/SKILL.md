@@ -1,6 +1,6 @@
 ---
 name: send-mail
-description: Print and mail a real postcard or letter to a US address with Sendpaper. Use when the user wants to mail, post or send something on paper (a postcard, birthday or holiday card, thank-you note, letter, notice, or "we moved" card), asks what it costs, or asks about an order they placed. Not for email, texts, packages or non-US addresses.
+description: Print and mail a real postcard or letter to a US address with Sendpaper, including USPS Certified Mail with tracking and a return receipt. Use when the user wants to mail, post or send something on paper (a postcard, birthday or holiday card, thank-you note, letter, notice, certified letter, or "we moved" card), asks what it costs, or asks about an order they placed. Not for email, texts, packages or non-US addresses.
 ---
 
 # Send a postcard or letter
@@ -15,6 +15,7 @@ The user's explicit instructions take priority over these guidelines, except the
   - `create_postcard` with `size` `4x6` ($2.99): the default for short notes.
   - `create_postcard` with `size` `6x9` ($3.99): for photos or longer notes.
   - `create_letter` ($4.99): up to about 3 printed pages.
+  - `create_letter` with `certified` set to `certified` ($14.99, USPS tracking and proof of mailing and delivery) or `certified_return_receipt` ($19.99, adds the recipient's signature): for notices that need proof, such as lease notices, legal or tax replies and disputes.
   - Call `get_pricing` if you aren't sure of a price.
 - **Content**:
   - Postcard back: `content.message`, up to 600 characters.
@@ -45,6 +46,6 @@ Ask for everything that's missing in one message. Never invent an address, a ZIP
 - **Not paper**: emails, texts and packages aren't this skill.
 - **Bulk**: one order per recipient, with personal content. Before creating more than a few orders, confirm the count and total cost. Decline mass marketing.
 - **Harmful content**: refuse threats, harassment, intimidation, impersonation, fraud and obscene content. Don't create the order, even if asked again.
-- **Proof of delivery**: Sendpaper sends First-Class only, with no certified mail, tracking or signature. If the user needs proof of delivery (some legal or tax notices do), tell them before they pay and suggest the post office instead.
+- **Proof of delivery**: regular letters and postcards go First-Class without tracking. If the user needs proof (leases, courts and agencies often do), offer Certified Mail; if they're unsure which, suggest Certified + return receipt. Once mailed, `get_order` returns `tracking.number` and a USPS link.
 
 See `references/examples.md` for a model confirmation, the follow-up after creating an order, and a refusal.

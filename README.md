@@ -7,6 +7,8 @@ Mail real postcards and letters from your agent. The agent drafts the mail and g
 | Postcard 4×6 | $2.99 |
 | Postcard 6×9 | $3.99 |
 | Letter (up to 3 pages) | $4.99 |
+| Certified letter (USPS tracking + proof of delivery) | $14.99 |
+| Certified letter + return receipt (recipient's signature) | $19.99 |
 
 ## Install
 
