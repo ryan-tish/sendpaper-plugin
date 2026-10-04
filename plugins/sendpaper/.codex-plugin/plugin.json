@@ -22,7 +22,7 @@
   "interface": {
     "displayName": "Sendpaper",
     "shortDescription": "Mail real postcards & letters",
-    "longDescription": "Send real printed postcards (4×6 and 6×9) and letters (up to 3 pages) to any US address. Ask in plain words, for example \"mail my mom a birthday postcard\". Sendpaper confirms the addresses and wording, creates the order and shows an exact print preview. You pay on Sendpaper's own checkout page (Stripe), or, in agents that support it, with a one-time Stripe Link payment you approve for that exact amount. A person reviews every piece before it's printed and mailed via USPS First-Class, usually within one business day. Prices include printing and postage: postcards $2.99 and $3.99, letters $4.99. Limitations: US addresses only; First-Class mail only (no certified mail or tracking); no bulk marketing; threatening, harassing, fraudulent or obscene mail is refused.",
+    "longDescription": "Send real postcards and letters without leaving the conversation. Ask for a birthday card, a thank-you note or a letter to your landlord, and Sendpaper drafts it, shows you exactly what will print, and mails it via USPS First-Class, usually within one business day. You pay on Sendpaper's secure checkout, or approve a one-time Stripe Link payment, and a person reviews every piece before it's printed. Postcards are $2.99 (4×6) and $3.99 (6×9), letters $4.99, with printing and postage included. US addresses only, First-Class mail only (no certified mail or tracking), and no bulk marketing.",
     "developerName": "Sendpaper",
     "category": "Productivity",
     "capabilities": [
@@ -36,9 +36,9 @@
     "logo": "./assets/icon.png",
     "composerIcon": "./assets/icon.png",
     "defaultPrompt": [
-      "Mail a birthday postcard to my mom",
-      "Send a thank-you postcard to someone who helped me",
-      "What does it cost to mail a letter?"
+      "Mail my mom a birthday postcard that says I'll call her Sunday.",
+      "Write a thank-you note to my contractor and mail it.",
+      "Send a \"We moved!\" postcard with our new address."
     ],
     "websiteURL": "https://sendmypaper.com",
     "privacyPolicyURL": "https://sendmypaper.com/privacy",
