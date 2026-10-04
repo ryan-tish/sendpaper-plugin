@@ -20,7 +20,12 @@ codex plugin marketplace add ryan-tish/sendpaper-plugin
 ```json
 "mcp_servers": { "sendpaper": { "transport": "streamable_http", "url": "https://sendmypaper.com/mcp" } }
 ```
-**Claude Code:** `claude mcp add --transport http sendpaper https://sendmypaper.com/mcp`
+**Claude Code plugin** (MCP server plus the `send-mail` skill):
+```
+/plugin marketplace add ryan-tish/sendpaper-plugin
+/plugin install sendpaper@sendpaper
+```
+**Claude Code (MCP only):** `claude mcp add --transport http sendpaper https://sendmypaper.com/mcp`
 
 ## Tools
 `get_pricing`, `create_postcard`, `create_letter`, `pay_order`, `get_order`, `cancel_order`.
