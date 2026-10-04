@@ -1,6 +1,6 @@
 {
   "name": "sendpaper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Print and mail real postcards and letters to US addresses via USPS First-Class. The agent drafts the mail and shows an exact print preview; you pay on Sendpaper's checkout page, or approve a one-time Stripe Link payment.",
   "author": {
     "name": "Sendpaper",
@@ -24,7 +24,7 @@
     "shortDescription": "Mail real postcards & letters",
     "longDescription": "Send real postcards and letters without leaving the conversation. Ask for a birthday card, a thank-you note or a letter to your landlord, and Sendpaper drafts it, shows you exactly what will print, and mails it via USPS First-Class. You pay on Sendpaper's secure checkout, or approve a one-time Stripe Link payment, and a person reviews every piece before it's printed.",
     "developerName": "Sendpaper",
-    "category": "Productivity",
+    "category": "Communication",
     "capabilities": [
       "Create postcard and letter orders",
       "Show print previews",
