@@ -10,7 +10,7 @@
   "homepage": "https://sendmypaper.com",
   "privacyPolicyUrl": "https://sendmypaper.com/privacy",
   "termsOfServiceUrl": "https://sendmypaper.com/terms",
-  "supportUrl": "mailto:support@sendmypaper.com",
+  "supportUrl": "https://docs.sendmypaper.com/guides/faq",
   "repository": "https://github.com/ryan-tish/sendpaper-plugin",
   "license": "MIT",
   "keywords": [
