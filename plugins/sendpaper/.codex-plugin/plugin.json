@@ -22,7 +22,7 @@
   "interface": {
     "displayName": "Sendpaper",
     "shortDescription": "Mail real postcards & letters",
-    "longDescription": "Send real postcards and letters without leaving the conversation. Ask for a birthday card, a thank-you note or a letter to your landlord, and Sendpaper drafts it, shows you exactly what will print, and mails it via USPS First-Class, usually within one business day. You pay on Sendpaper's secure checkout, or approve a one-time Stripe Link payment, and a person reviews every piece before it's printed. Postcards come in 4×6 and 6×9, letters run up to three pages, and printing and postage are included. US addresses only, First-Class mail only (no certified mail or tracking), and no bulk marketing.",
+    "longDescription": "Send real postcards and letters without leaving the conversation. Ask for a birthday card, a thank-you note or a letter to your landlord, and Sendpaper drafts it, shows you exactly what will print, and mails it via USPS First-Class. You pay on Sendpaper's secure checkout, or approve a one-time Stripe Link payment, and a person reviews every piece before it's printed.",
     "developerName": "Sendpaper",
     "category": "Productivity",
     "capabilities": [
@@ -38,7 +38,7 @@
     "defaultPrompt": [
       "Mail my mom a birthday postcard that says I'll call her Sunday.",
       "Write a thank-you note to my contractor and mail it.",
-      "Send a \"We moved!\" postcard with our new address."
+      "Write a reply to my IRS notice and mail it to the address on the notice."
     ],
     "websiteURL": "https://sendmypaper.com",
     "privacyPolicyURL": "https://sendmypaper.com/privacy",
