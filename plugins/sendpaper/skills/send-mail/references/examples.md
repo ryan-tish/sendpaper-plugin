@@ -15,7 +15,7 @@ Use these as a model for tone and structure, not as fixed text.
 ## After `create_postcard` succeeds (no payment token available)
 
 > Done. Here's exactly what will print: [preview](preview_url).
-> Pay $2.99 here to send it: [checkout](checkout_url). Nothing is mailed until it's paid. After that, a person checks it and it's usually in the mail within one business day.
+> Pay $1.99 here to send it ($1 off, since it's your first order from this address): [checkout](checkout_url). Nothing is mailed until it's paid. After that, a person checks it and it's usually in the mail within one business day.
 
 ## After `pay_order` succeeds
 

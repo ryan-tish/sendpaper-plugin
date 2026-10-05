@@ -1,6 +1,6 @@
 {
   "name": "sendpaper",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Print and mail real postcards and letters to US addresses via USPS First-Class, or letters by USPS Certified Mail with tracking. Claude drafts the mail, shows an exact print preview, and you pay on Sendpaper's checkout or approve a one-time Stripe Link payment.",
   "author": {
     "name": "Sendpaper",
