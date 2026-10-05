@@ -17,7 +17,7 @@ The user's explicit instructions take priority over these guidelines, except the
   - `create_letter`: up to about 3 printed pages, or the user's own PDF (see Content).
   - `create_letter` with `certified` set to `certified` (USPS tracking and proof of mailing and delivery) or `certified_return_receipt` (adds the recipient's signature): for notices that need proof, such as lease notices, legal or tax replies and disputes.
   - `express: true` (postcards or letters): USPS Priority Mail, usually 2 to 3 days with tracking, for an extra charge. It can't be combined with `certified`; if the user needs both proof and speed, explain that Certified already includes tracking.
-  - Prices change, so call `get_pricing` and quote the price from the order you create rather than from memory. The first order from each return address is $1 off automatically; the order's `discount` field shows it.
+  - Prices change, so call `get_pricing` and quote the price from the order you create rather than from memory. When a first-order discount is running, it's taken off automatically; the order's `discount` field shows it and `get_pricing` describes it.
 - **Content**:
   - Postcard back: `content.message`, up to 600 characters.
   - Postcard front (`content.layout`): `headline` (`content.front_headline`, up to 60 characters, with `content.front_theme`: `ink`, `sky`, `sunset`, `forest`, `rose`, `sand`, `night` or `mint`), `photo` (`content.front_image_url`), `photo_caption` (`front_image_url` plus `content.caption`, up to 80 characters) or `collage` (`content.front_images`, 2 to 4 photo links). Photos must be https JPG or PNG links the user gave you.
