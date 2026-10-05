@@ -1,6 +1,6 @@
 {
   "name": "sendpaper",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Print and mail real postcards and letters to US addresses via USPS First-Class. The agent drafts the mail and shows an exact print preview; you pay on Sendpaper's checkout page, or approve a one-time Stripe Link payment.",
   "author": {
     "name": "Sendpaper",

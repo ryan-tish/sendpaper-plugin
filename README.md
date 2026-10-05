@@ -2,7 +2,7 @@
 
 Mail real postcards and letters from your agent. The agent drafts the mail and gets back a print preview and a Stripe checkout link. Nothing is mailed until it's paid, by you or by your agent with your approval, and a person reviews every piece before it's printed and sent via USPS First-Class (US addresses only).
 
-Products: postcards (4×6, 6×9, 6×11), letters up to 3 pages (optionally with a photo, printed in color), and letters by USPS Certified Mail with tracking and an optional return receipt. Printing and postage are included, and the first order from each return address is $1 off. Current prices: [sendmypaper.com/#pricing](https://sendmypaper.com/#pricing), or ask your agent (it calls `get_pricing`).
+Products: postcards (4×6, 6×9, 6×11; headline, photo, photo + caption or collage fronts), letters you write or your own PDF (up to 6 pages, color optional), USPS Certified Mail with tracking and an optional return receipt, and express delivery (USPS Priority Mail). Printing and postage are included, and the first order from each return address is $1 off. Current prices: [sendmypaper.com/#pricing](https://sendmypaper.com/#pricing), or ask your agent (it calls `get_pricing`).
 
 ## Install
 
