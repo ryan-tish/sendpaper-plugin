@@ -26,6 +26,8 @@ codex plugin marketplace add ryan-tish/sendpaper-plugin
 ## Tools
 `get_pricing`, `create_postcard`, `create_letter`, `pay_order`, `get_order`, `cancel_order`.
 
+Send the same postcard or letter to up to 25 people with one payment: pass `recipients` instead of `to`.
+
 Agents can pay with a Stripe shared payment token you approve (via Stripe Link). See https://docs.sendmypaper.com/guides/agent-payments.
 
 Website: https://sendmypaper.com · Docs: https://docs.sendmypaper.com · Support: support@sendmypaper.com · [Content policy](https://sendmypaper.com/content-policy)

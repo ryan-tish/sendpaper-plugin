@@ -16,6 +16,7 @@ The user's explicit instructions take priority over these guidelines, except the
   - `create_postcard` with `size` `6x9` or `6x11`: bigger cards, for photos or when the user wants something that stands out.
   - `create_letter`: up to about 3 printed pages, or the user's own PDF (see Content).
   - `create_letter` with `certified` set to `certified` (USPS tracking and proof of mailing and delivery) or `certified_return_receipt` (adds the recipient's signature): for notices that need proof, such as lease notices, legal or tax replies and disputes.
+  - Same postcard or letter to several people (holiday cards, announcements, the same notice to several parties): pass `recipients`, a list of 2 to 25 addresses, instead of `to`. Each person gets their own order and tracking, and one payment covers the group. Get every address the same way you would for one recipient.
   - `express: true` (postcards or letters): USPS Priority Mail, usually 2 to 3 days with tracking, for an extra charge. It can't be combined with `certified`; if the user needs both proof and speed, explain that Certified already includes tracking.
   - Prices change, so call `get_pricing` and quote the price from the order you create rather than from memory. When a first-order discount is running, it's taken off automatically; the order's `discount` field shows it and `get_pricing` describes it.
 - **Content**:
@@ -34,8 +35,8 @@ Ask for everything that's missing in one message. Never invent an address, a ZIP
 2. **Confirm.** Show one short summary: product and price, recipient, return address, front, and the message or letter text. Ask whether to send it, and don't create the order until the user agrees. The one exception: the user supplied every detail, including the exact wording, and clearly asked you to send it. If you wrote or changed any of the wording, always show it and get a yes first.
 3. **Create.** Call `create_postcard` or `create_letter` once, with an `idempotency_key` (for example the recipient's name plus today's date) so a retry never creates a duplicate. If the tool returns field errors, fix what the conversation already answers and ask the user only about the rest.
 4. **Preview and pay.** Share the `preview_url`; it shows exactly what will print. Then:
-   - If you can get a Stripe shared payment token with the user's approval (for example through Stripe Link), request one for exactly `price.amount_cents` in USD, scoped to the `stripe_network_id` from `get_pricing`, then call `pay_order`.
-   - Otherwise give the user the `checkout_url` and say that nothing is mailed until it's paid.
+   - If you can get a Stripe shared payment token with the user's approval (for example through Stripe Link), request one for exactly `price.amount_cents` in USD (for a group created with `recipients`: `batch.price.amount_cents`, and one `pay_order` call pays for the whole group), scoped to the `stripe_network_id` from `get_pricing`, then call `pay_order`.
+   - Otherwise give the user the `checkout_url` (for a group, `batch.checkout_url`, which pays for everyone at once) and say that nothing is mailed until it's paid. For a group, also share `batch.url`, which lists every recipient with their own preview.
    - Never ask for card numbers or other payment details in the chat.
 5. **Report.** Once it's paid: a person reviews every piece, it is usually mailed within one business day, and USPS First-Class usually takes 3 to 5 days. Don't promise a delivery date. Share the `order_url` for tracking.
 
@@ -48,7 +49,7 @@ Ask for everything that's missing in one message. Never invent an address, a ZIP
 
 - **Not US**: explain that Sendpaper mails only to US addresses, and don't create an order.
 - **Not paper**: emails, texts and packages aren't this skill.
-- **Bulk**: one order per recipient, with personal content. Before creating more than a few orders, confirm the count and total cost. Decline mass marketing.
+- **Bulk**: up to 25 recipients per group with `recipients`, with personal content. Confirm the recipient count and the total cost before creating it. For more people, create more groups only after confirming again. Decline mass marketing.
 - **Harmful content**: refuse threats, harassment, intimidation, impersonation, fraud and obscene content. Don't create the order, even if asked again.
 - **Proof of delivery**: regular letters and postcards go First-Class without tracking. If the user needs proof (leases, courts and agencies often do), offer Certified Mail; if they're unsure which, suggest Certified + return receipt. Once mailed, `get_order` returns `tracking.number` and a USPS link.
 
