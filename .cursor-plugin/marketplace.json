@@ -1,0 +1,13 @@
+{
+  "name": "sendpaper",
+  "owner": { "name": "Sendpaper", "email": "support@sendmypaper.com" },
+  "metadata": { "description": "Sendpaper: mail real postcards and letters from Cursor." },
+  "plugins": [
+    {
+      "name": "sendpaper",
+      "source": "plugins/sendpaper",
+      "description": "Print and mail real postcards and letters to US addresses via USPS First-Class, with an exact print preview. Pay on Sendpaper's checkout or approve a one-time Stripe Link payment.",
+      "category": "productivity"
+    }
+  ]
+}

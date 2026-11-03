@@ -1,4 +1,4 @@
-# Sendpaper for Codex, Muse Code and Claude
+# Sendpaper for Codex, Muse Code, Claude and Cursor
 
 Mail real postcards and letters from your agent. The agent drafts the mail and gets back a print preview and a Stripe checkout link. Nothing is mailed until it's paid, by you or by your agent with your approval, and a person reviews every piece before it's printed and sent via USPS First-Class (US addresses only).
 
@@ -22,6 +22,11 @@ codex plugin marketplace add ryan-tish/sendpaper-plugin
 /plugin install sendpaper@sendpaper
 ```
 **Claude Code (MCP only):** `claude mcp add --transport http sendpaper https://sendmypaper.com/mcp`
+
+**Cursor plugin** (MCP server plus the `send-mail` skill): install Sendpaper from the Cursor Marketplace. **Cursor (MCP only):** add to `~/.cursor/mcp.json`:
+```json
+{ "mcpServers": { "sendpaper": { "url": "https://sendmypaper.com/mcp" } } }
+```
 
 ## Tools
 `get_pricing`, `create_postcard`, `create_letter`, `pay_order`, `get_order`, `cancel_order`.
